@@ -1,8 +1,10 @@
-# What is this
-This is the StoryScript to C version of StoryScript.
-It will transpile StoryScript code to C code.
+---
+description: Welcome to StoryScript documentation!
+---
 
-## Purpose of this
-With this version, You can transpile the StoryScript code to C. Which means you can compile them and Use StoryScript as an Executable.
+# Welcome
 
-Note that this version is **not stable.**
+Hello there! Welcome to StoryScript documentation. You can go to the Quickstart guide page here. If you are already familiar with programming in Python or a similar language.
+
+
+
