@@ -6,6 +6,12 @@ description: StoryScript Quickstart Guide
 
 Welcome to the StoryScript Quickstart guide. This guide is recommended for People who already familiar with Programming in Python or Other similar programming languages.
 
+### Install Guide
+
+To install StoryScript, First download a Source code from the Main branch.
+Then, Install [python](https://www.python.org/downloads/release/python-395/)
+To ensure that everything works, You may need to download Python 3.9.5
+
 ### Arithmetics
 
 These are all Arithmetics in StoryScript:
@@ -128,70 +134,44 @@ To include multiple Statements, You'll need to add && sign. For example:
 if a >= 5 then a = 10 && print ("a is more than or equal to 5 and its value is now changed to 10.")end
 ```
 
-### Ternary Operator
+#### Multiple Conditions
 
-A Ternary operator is a Short form of If statement. For example:
+To use Multiple conditions in StoryScript, There are 2 keywords for you to use.
 
-```lua
-int something = 10
-if something >= 5 then
-    print ("something is more than or equal to 5")
-end
-```
+"and" and "or"
 
-Can be transformed into this:
+The keyword is pretty self explanatory. "and" will check if the both condition is true.
 
-```c
-int something = 10
-? something >= 5 : print ("something is more than or equal to 5") : :
-```
+And "or" will check if either one condition is true.
 
-Its format is:
-
-```c
-? condition : If the condition was true : If the condition was false :
-```
-
-And you can use && sign to include multiple commands.  
 For example:
 
-```c
-int owo = 10
-? owo >= 10 : owo *= 20 && print ("owo is now multiplied by 20") : print ("owo value is not changed") :
-```
-
-This code, Will multiply owo by 20 and print "owo is now multiplied by 20" when owo is more than or equal to 10. Else will print "owo value is not changed"
-
-### Switch case statement
-
-In StoryScript, the Switch case statement is a Fast way to do simple checks. Its format are:
-
-```csharp
-switch variable/data:
-    case conditions:
-        statements
-        break
-    case default:
-        (default case)
-        break
+```lua
+string userinput = input ()
+if userinput == "I hate you" or input == "I don't like you" then
+    print (";-;")
 end
 ```
 
-Here's a little example of Switch case statement:
+This code will check if the variable userinput is equal to "I hate ypu" __or__ "I don't like you"
+If the condition was true, Print out ";-;"
 
-```csharp
-switch a
-    case 10:
-        print ("The value of a is 10")
-        break
-    case 20:
-        print ("The value of a is 20")
-        break
-    case default:
-        print ("I don't know what's the value of a...")
-        break
+#### Else case
+
+Else case is used to run code when the Condition im the If statement is not true.
+
+For example:
+
+```lua
+float a = 3.14
+if a == 4.13 then
+    print ("a is Equal to 4.13")
+else
+    print ("a is not Equal to 4.13")
 end
 ```
 
+In this code, There is a Variable called "a" which is Set to 3.14.
 
-
+If a is equal to 4.13, Then print "a is Equal to 4.13".
+Else, print "a is not equal to 4.13"
